@@ -1,6 +1,6 @@
-# Ay Nela.ai ChatBot
+# An Yela.ai ChatBot
 
-Ay Nela.ai ChatBot, kullanıcıların metin girişi yaparak belirli soruları sormasına ve yanıtlar almalarına olanak tanıyan bir web uygulamasıdır.
+An Yela.ai ChatBot, kullanıcıların metin girişi yaparak belirli soruları sormasına ve yanıtlar almalarına olanak tanıyan bir web uygulamasıdır.
 
 ## Özellikler
 
