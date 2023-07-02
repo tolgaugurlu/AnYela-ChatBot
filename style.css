@@ -1,0 +1,202 @@
+.container {
+  background-image: url(background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.username-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.username-form h2 {
+  color: white;
+  box-shadow: 14px 26px 19px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 14px 26px 19px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 14px 26px 19px 0px rgba(0, 0, 0, 0.54);
+  background-position: cover;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.username-input {
+  padding: 8px;
+  margin-bottom: 20px; /* Örnek olarak 20px yapabilirsiniz */
+}
+
+.username-submit {
+  font-size: 32px;
+  margin-top: 55px;
+  padding: 8px 20px;
+  background-color: #0063ba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.loading-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #0063ba;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  border: 2px solid #59f5eda0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 14px 26px 19px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 14px 26px 19px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 14px 26px 19px 0px rgba(0, 0, 0, 0.54);
+}
+
+.chat-output {
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.bot-name {
+  font-weight: bold;
+  color: #c542e9;
+}
+
+.bot-message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.bot-message .message-bubble {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 10px 10px 0 10px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.user-message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.user-message .message-bubble {
+  background-color: #b8dbff;
+  color: #333;
+  border-radius: 10px 10px 10px 0;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Ek tasarım öğeleri */
+.message-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.bot-message .message-bubble::after {
+  right: 12px;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.user-message .message-bubble::after {
+  left: 12px;
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent #b8dbff transparent;
+}
+
+.chat-container {
+  background-color: #fafafa;
+}
+
+.chat-output {
+  background-color: #fff;
+}
+
+.user-input {
+  background-color: #f7f7f7;
+  color: #333;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-radius: 0;
+  resize: none;
+}
+
+.username-form {
+  margin-bottom: 20px;
+}
+
+.username-input {
+  border: none;
+  border-bottom: 2px solid #0063ba;
+  border-radius: 0;
+}
+
+.username-submit {
+  background-color: #0063ba;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.username-submit:hover {
+  background-color: #0053a0;
+}
+
+.loading-container {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.loading-icon {
+  background-color: #0063ba;
+}
