@@ -1,6 +1,6 @@
-// Veri seti
+// Veri
 const data = [
-  // Soru ve yanıtlar buraya gelecek
+  // Soru ve yanıtlar
   {
     soru: "HTML nedir ve nasıl kullanılır?",
     yanit:
