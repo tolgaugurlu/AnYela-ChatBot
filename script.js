@@ -274,7 +274,7 @@ function displayMessage(message, sender) {
   } else if (sender === "bot") {
     const botNameSpan = document.createElement("span");
     botNameSpan.classList.add("bot-name");
-    botNameSpan.textContent = "Ay Nela.ai: ";
+    botNameSpan.textContent = "An Yela.ai: ";
     messageElement.prepend(botNameSpan);
   }
 
